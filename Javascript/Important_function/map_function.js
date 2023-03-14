@@ -13,10 +13,16 @@
 //     } 
 //     );
 
+
 arr = [3,4,5,4];
+modifiedArr = [];
 
-for(let i = 0; i<length; i++) {
-    console.log(`${i}:`);
-    
-
+for(let i = 0; i<arr.length; i++) {
+    console.log(`Index:${i} = Value:${arr[i]}`);
+    //modifiedArr[i] = arr[i];
+    modifiedArr.push(arr[i] * 3);
+    console.log(modifiedArr);
 }
+
+console.log(`Original Array; ${arr}`)
+console.log(`Final New array: ${modifiedArr}`);
