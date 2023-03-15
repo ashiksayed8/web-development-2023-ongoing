@@ -68,3 +68,52 @@ img {
         'showcase showcase top-box-a'
         'showcase showcase top-box-b';
  }
+
+ /* Showcase */
+ .showcase {
+    grid-area: showcase;
+    min-height: 400px;
+    background: url(https://image.ibb.co/kYJK8x/showcase.jpg);
+    background-size: cover; 
+    background-position: center;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    justify-content: center;
+    box-shadow: var(--shadow);
+ }
+
+ .showcase h1 {
+    font-size: 4rem;
+    color: var(--light);
+    margin-top: 0;
+ }
+
+ .showcase p {
+    font-size: 1.3rem;
+    margin-top: 0;
+    color: var(--light);
+ }
+
+ /* Top Box */
+ .top-box {
+    background: var(--primary);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+ }
+
+ .top-box .price {
+    font-size: 2.5rem;
+ }
+
+ .tob-box-a {
+    grid-area: top-box-a;
+ }
+
+ .top-box-b {
+    grid-area: top-box-b;
+ }
